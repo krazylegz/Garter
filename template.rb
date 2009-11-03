@@ -8,6 +8,7 @@ gem 'thoughtbot-paperclip', :lib => 'paperclip', :source => 'http://gems.github.
 gem 'chriseppstein-compass', :lib => 'compass', :source => 'http://gems.github.com'
 gem 'josevalim-inherited_resources', :lib => 'inherited_resources', :source => 'http://gems.github.com'
 gem 'giraffesoft-enum_field', :lib => 'enum_field', :source => 'http://gems.github.com'
+gem 'grimen-dry_scaffold', :lib => false, :source => 'http://gems.github.com'
 
 # Testing gems
 gem "cucumber", :lib => false, :version => ">= 0.3.98"
@@ -55,6 +56,9 @@ environment 'DO_NOT_REPLY = "vikram@swiftsignal.com"'
 
 # Clearance will want to set up the database
 rake "db:migrate"
+
+# Enable the Dry Scaffold Rake task
+run "echo require \"'dry_scaffold/tasks'\" >> Rakefile"
 
 # Remove the default page
 run "rm public/index.html"
