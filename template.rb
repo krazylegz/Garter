@@ -8,7 +8,6 @@ gem 'thoughtbot-paperclip', :lib => 'paperclip', :source => 'http://gems.github.
 gem 'chriseppstein-compass', :lib => 'compass', :source => 'http://gems.github.com'
 gem 'josevalim-inherited_resources', :lib => 'inherited_resources', :source => 'http://gems.github.com'
 gem 'giraffesoft-enum_field', :lib => 'enum_field', :source => 'http://gems.github.com'
-gem 'josevalim-inherited_resources', :lib => 'inherited_resources', :source => 'http://gems.github.com'
 
 # Testing gems
 gem "cucumber", :lib => false, :version => ">= 0.3.98"
