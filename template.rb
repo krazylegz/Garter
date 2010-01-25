@@ -1,22 +1,22 @@
 # Rails template similar to Suspenders
 
 # Application gems
-gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com'
-gem 'thoughtbot-clearance', :lib => 'clearance', :source => 'http://gems.github.com'
-gem 'justinfrench-formtastic', :lib => 'formtastic', :source => 'http://gems.github.com'
-gem 'thoughtbot-paperclip', :lib => 'paperclip', :source => 'http://gems.github.com'
-gem 'chriseppstein-compass', :lib => 'compass', :source => 'http://gems.github.com'
-gem 'josevalim-inherited_resources', :lib => 'inherited_resources', :source => 'http://gems.github.com'
-gem 'giraffesoft-enum_field', :lib => 'enum_field', :source => 'http://gems.github.com'
-gem 'grimen-dry_scaffold', :lib => false, :source => 'http://gems.github.com'
+gem 'will_paginate', :lib => 'will_paginate', :source => 'http://gemcutter.org'
+gem 'clearance', :lib => 'clearance', :source => 'http://gemcutter.org'
+gem 'formtastic', :lib => 'formtastic', :source => 'http://gemcutter.org'
+gem 'paperclip', :lib => 'paperclip', :source => 'http://gemcutter.org'
+gem 'compass', :lib => 'compass', :source => 'http://gemcutter.org'
+gem 'inherited_resources', :lib => 'inherited_resources', :source => 'http://gemcutter.org'
+gem 'enum_field', :lib => 'enum_field', :source => 'http://gemcutter.org'
+gem 'dry_scaffold', :lib => false, :source => 'http://gemcutter.org'
 
 # Testing gems
-gem "cucumber", :lib => false, :version => ">= 0.3.98"
-gem "webrat", :lib => false, :version => ">= 0.4.4"
-gem 'thoughtbot-shoulda', :lib => 'shoulda', :version => '>= 2.10.2', :source => 'http://gems.github.com'
-gem 'thoughtbot-factory_girl', :lib => 'factory_girl', :version => '>= 1.2.2', :source => 'http://gems.github.com'
-gem 'rr', :version => '>= 0.10.0', :source => 'http://gems.rubyforge.org'
-gem 'faker', :version => '>= ', :source => 'http://gems.rubyforge.org'
+gem "cucumber", :lib => false, :version => ">= 0.3.98", :source => 'http://gemcutter.org'
+gem "webrat", :lib => false, :version => ">= 0.4.4", :source => 'http://gemcutter.org'
+gem 'shoulda', :lib => 'shoulda', :version => '>= 2.10.2', :source => 'http://gemcutter.org'
+gem 'factory_girl', :lib => 'factory_girl', :version => '>= 1.2.2', :source => 'http://gemcutter.org'
+gem 'rr', :version => '>= 0.10.0', :source => 'http://gemcutter.org'
+gem 'faker', :version => '>= ', :source => 'http://gemcutter.org'
 gem 'jnunemaker-matchy', :lib => false, :version => '>= 0.4.0', :source => 'http://gems.github.com'
 
 # Make sure the gems are installed
