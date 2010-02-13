@@ -56,6 +56,7 @@ generate("cucumber")
 generate("clearance")
 generate("clearance_features", '-f')
 route "map.root :controller => :home"
+route "Clearance::Routes.draw(map)"
 environment 'HOST = "localhost"'
 environment 'DO_NOT_REPLY = "vikram@swiftsignal.com"'
 
