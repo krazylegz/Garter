@@ -69,6 +69,9 @@ Clearance.configure do |config|
 end
 CODE
 
+# This is a hack to fix the way Clearance currently misuses ActionMailer in Clearance 0.8.5
+gsub_file 'features/step_definitions/clearance_steps.rb', /ActionMailer::Base.deliveries.first/, 'ActionMailer::Base.deliveries.last'
+
 # Clearance will want to set up the database
 rake "db:migrate"
 

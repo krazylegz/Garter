@@ -2,4 +2,4 @@ h1. Garter
 A Rails template somewhat similar to Thoughtbot's Suspenders. 
 
 h2. News
-Clearance tests are current broken in Clearance 0.8.5 because of the way ActionMailer is configured out of the box.
+Clearance tests are current broken in Clearance 0.8.5 because of the way ActionMailer is configured out of the box. I have included a hack to fix this for now.
