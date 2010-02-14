@@ -52,6 +52,9 @@ file 'app/views/layouts/application.html.haml', '!!!
 # Generate some initial Cucumber stuffs
 generate("cucumber")
 
+# And now we add factory_girl to cucumber.rb
+gem 'factory_girl', :lib => 'factory_girl', :version => '>= 1.2.2', :source => 'http://gemcutter.org', :env => :cucumber
+
 # Get Clearance installed (overwrite any existing Cucumber files)
 generate("clearance")
 generate("clearance_features", '-f')
@@ -59,6 +62,12 @@ route "map.root :controller => :home"
 route "Clearance::Routes.draw(map)"
 environment 'HOST = "localhost"'
 environment 'DO_NOT_REPLY = "vikram@swiftsignal.com"'
+environment "config.action_mailer.default_url_options = { :host => 'localhost' }", :env => :cucumber
+initializer 'clearance.rb', <<-CODE
+Clearance.configure do |config|
+  config.mailer_sender = 'vikram@swiftsignal.com'
+end
+CODE
 
 # Clearance will want to set up the database
 rake "db:migrate"
