@@ -7,7 +7,7 @@ gem 'paperclip', :lib => 'paperclip', :source => 'http://gemcutter.org'
 gem 'compass', :lib => 'compass', :source => 'http://gemcutter.org'
 gem 'enum_field', :lib => 'enum_field', :source => 'http://gemcutter.org'
 gem 'dry_scaffold', :lib => false, :source => 'http://gemcutter.org'
-gem 'clearance', :lib => 'clearance', :source => 'http://gemcutter.org', :version => '0.8.5'
+gem 'clearance', :lib => 'clearance', :source => 'http://gemcutter.org', :version => '0.8.8'
 gem 'inherited_resources', :lib => 'inherited_resources', :source => 'http://gemcutter.org', :version => '1.0.3'
 gem 'responders', :source => 'http://gemcutter.org', :version => '0.4.3'
 
